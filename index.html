@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pioneer Bank</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!--Login Section start-->
+
+    <section id='login-section' class="container">
+        <main class="text-center"> 
+            <h1>Welcome To Pioneer Bank</h1>
+            <br>
+            <div id="login" class="box-width">
+                <input type="text" class="form-control" placeholder="abcd@mail.com">
+                <br>
+                <input type="password" name="" id="" class="form-control" placeholder="Password">
+                <br>
+                <button id="logInBtn" class="btn btn-success">Login</button>
+            </div>
+        </main>
+    </section>
+
+    <!--Login Section End-->
+
+    <!--Transaction Section Start-->
+
+    <section id='transaction-section' class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="same-width deposit">
+                    <h5>Deposit</h4>
+                    <h2>$<span id="depositUpdate">00</span></h5>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="same-width withdraw">
+                    <h5>Withdraw</h4>
+                    <h2 >$<span id="withdrawUpdate">00</span></h5>
+                </div>
+            </div>
+            <div class="col-md-4 ">
+                <div class="same-width balance">
+                    <h5>Balance</h4>
+                    <h2 >$<span id="balanceUpdate">00</span></h5>
+                </div>
+            </div>
+        </div>
+        <!--2nd part-->
+
+        <div class="row">
+            <div class='col-md-6'>
+                <div class="box-width">
+                    <h4>Deposit</h4>
+                    <input id="depositInput" type="number" class="form-control" placeholder="00">
+                    <br>
+                    <button id="depositBtn" class="btn btn-success">Submit</button>
+                </div>
+            </div>
+
+            <div class='col-md-6'>
+                 <div class="box-width">
+                    <h4>Withdraw</h4>
+                    <input id="withdrawInput" type="number" class="form-control" placeholder="00">
+                    <br>
+                    <button id="withdrawBtn" class="btn btn-success ">Submit</button>
+                </div>    
+            </div>
+        </div>
+
+    </section>
+
+    <script src="bank.js"></script>
+</body>
+</html>
